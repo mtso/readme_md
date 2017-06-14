@@ -1,0 +1,7 @@
+{
+  "name": "readme_md",
+  "version": "0.0.2",
+  "dependencies": {
+    "marked": "^0.3.6"
+  }
+}
