@@ -1,17 +1,3 @@
-const fs = require('fs');
-const marked = require('marked');
+const readme = require('./dist/')
 
-/**
- * Parses a markdown file and returns HTML markup.
- * @param {string?} path - Filepath to README.md.
- * @returns {string} markup - HTML markup string.
- */
-const render = function(path) {
-  path = path || './README.md';
-  const raw = fs.readFileSync(path).toString();
-  return marked(raw);
-};
-
-render.markup = render.readme = render('./README.md');
-
-module.exports = render;
+module.exports = readme
